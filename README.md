@@ -14,3 +14,23 @@ Features
 - Configurable settings for different languages and accents.
 
 - Lightweight backend for seamless integration.
+
+Technologies Used
+
+- Python: Core language for development.
+
+- Flask/Django: Backend framework.
+
+- Torch: For deep learning models.
+
+- SpeechRecognition: Audio processing.
+
+- FFmpeg: Audio conversion and processing.
+
+- Git LFS: For managing large audio and model files.
+
+Installation
+
+1. Clone the repository:
+     git clone https://github.com/AAnurudh/speechtotext.git
+     cd speechtotext
