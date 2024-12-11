@@ -32,5 +32,9 @@ Technologies Used
 Installation
 
 1. Clone the repository:
-   ```git clone https://github.com/AAnurudh/speechtotext.git```
-   ```cd speechtotext```
+   ```
+   git clone https://github.com/AAnurudh/speechtotext.git
+   ```
+   ```
+   cd speechtotext
+   ```
