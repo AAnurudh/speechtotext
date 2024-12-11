@@ -1,0 +1,1353 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 988-806-175
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 988-806-175
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 988-806-175
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 988-806-175
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 191-330-759
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\audio_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\marian_translate.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\whisper_model.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+ERROR:root:Transcription failed for Whisper(
+  (encoder): AudioEncoder(
+    (conv1): Conv1d(80, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+    (conv2): Conv1d(1024, 1024, kernel_size=(3,), stride=(2,), padding=(1,))
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln_post): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TextDecoder(
+    (token_embedding): Embedding(51865, 1024)
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (cross_attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (cross_attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+): 'str' object has no attribute 'transcribe'
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+ERROR:root:Transcription failed for Whisper(
+  (encoder): AudioEncoder(
+    (conv1): Conv1d(80, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+    (conv2): Conv1d(1024, 1024, kernel_size=(3,), stride=(2,), padding=(1,))
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln_post): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TextDecoder(
+    (token_embedding): Embedding(51865, 1024)
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (cross_attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (cross_attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+): 'str' object has no attribute 'transcribe'
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\marian_translate.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+ERROR:root:Transcription failed for Whisper(
+  (encoder): AudioEncoder(
+    (conv1): Conv1d(80, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+    (conv2): Conv1d(1024, 1024, kernel_size=(3,), stride=(2,), padding=(1,))
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln_post): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TextDecoder(
+    (token_embedding): Embedding(51865, 1024)
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (cross_attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (cross_attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+): 'str' object has no attribute 'transcribe'
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+ERROR:root:Transcription failed for Whisper(
+  (encoder): AudioEncoder(
+    (conv1): Conv1d(80, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+    (conv2): Conv1d(1024, 1024, kernel_size=(3,), stride=(2,), padding=(1,))
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln_post): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TextDecoder(
+    (token_embedding): Embedding(51865, 1024)
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (cross_attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (cross_attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+): 'str' object has no attribute 'transcribe'
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+ERROR:root:Transcription failed for Whisper(
+  (encoder): AudioEncoder(
+    (conv1): Conv1d(80, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+    (conv2): Conv1d(1024, 1024, kernel_size=(3,), stride=(2,), padding=(1,))
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln_post): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TextDecoder(
+    (token_embedding): Embedding(51865, 1024)
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (cross_attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (cross_attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+): 'str' object has no attribute 'transcribe'
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+ERROR:root:Transcription failed for Whisper(
+  (encoder): AudioEncoder(
+    (conv1): Conv1d(80, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+    (conv2): Conv1d(1024, 1024, kernel_size=(3,), stride=(2,), padding=(1,))
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln_post): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TextDecoder(
+    (token_embedding): Embedding(51865, 1024)
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (cross_attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (cross_attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+): 'str' object has no attribute 'transcribe'
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+ERROR:root:Transcription failed for Whisper(
+  (encoder): AudioEncoder(
+    (conv1): Conv1d(80, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+    (conv2): Conv1d(1024, 1024, kernel_size=(3,), stride=(2,), padding=(1,))
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln_post): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TextDecoder(
+    (token_embedding): Embedding(51865, 1024)
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (cross_attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (cross_attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+): 'str' object has no attribute 'transcribe'
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+ERROR:root:Transcription failed for Whisper(
+  (encoder): AudioEncoder(
+    (conv1): Conv1d(80, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+    (conv2): Conv1d(1024, 1024, kernel_size=(3,), stride=(2,), padding=(1,))
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln_post): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TextDecoder(
+    (token_embedding): Embedding(51865, 1024)
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (cross_attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (cross_attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+): 'str' object has no attribute 'transcribe'
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+ERROR:root:Transcription failed for Whisper(
+  (encoder): AudioEncoder(
+    (conv1): Conv1d(80, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+    (conv2): Conv1d(1024, 1024, kernel_size=(3,), stride=(2,), padding=(1,))
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln_post): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TextDecoder(
+    (token_embedding): Embedding(51865, 1024)
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (cross_attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (cross_attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+): 'str' object has no attribute 'transcribe'
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+ERROR:root:Transcription failed for Whisper(
+  (encoder): AudioEncoder(
+    (conv1): Conv1d(80, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+    (conv2): Conv1d(1024, 1024, kernel_size=(3,), stride=(2,), padding=(1,))
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln_post): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TextDecoder(
+    (token_embedding): Embedding(51865, 1024)
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (cross_attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (cross_attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+): 'str' object has no attribute 'transcribe'
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 126-471-026
+ERROR:root:Transcription failed for Whisper(
+  (encoder): AudioEncoder(
+    (conv1): Conv1d(80, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+    (conv2): Conv1d(1024, 1024, kernel_size=(3,), stride=(2,), padding=(1,))
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln_post): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TextDecoder(
+    (token_embedding): Embedding(51865, 1024)
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (cross_attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (cross_attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+): 'str' object has no attribute 'transcribe'
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+ERROR:root:Transcription failed for Whisper(
+  (encoder): AudioEncoder(
+    (conv1): Conv1d(80, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+    (conv2): Conv1d(1024, 1024, kernel_size=(3,), stride=(2,), padding=(1,))
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln_post): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TextDecoder(
+    (token_embedding): Embedding(51865, 1024)
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (cross_attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (cross_attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+): 'str' object has no attribute 'transcribe'
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\audio_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\whisper_model.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\whisper_model.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\whisper_model.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\marian_translate.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+ERROR:root:Transcription failed for Whisper(
+  (encoder): AudioEncoder(
+    (conv1): Conv1d(80, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+    (conv2): Conv1d(1024, 1024, kernel_size=(3,), stride=(2,), padding=(1,))
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln_post): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TextDecoder(
+    (token_embedding): Embedding(51865, 1024)
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (cross_attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (cross_attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+): 'str' object has no attribute 'transcribe'
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\whisper_model.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\audio_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\audio_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\audio_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\marian_translate.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\audio_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\whisper_model.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+ERROR:root:Transcription failed for Whisper(
+  (encoder): AudioEncoder(
+    (conv1): Conv1d(80, 1024, kernel_size=(3,), stride=(1,), padding=(1,))
+    (conv2): Conv1d(1024, 1024, kernel_size=(3,), stride=(2,), padding=(1,))
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln_post): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+  (decoder): TextDecoder(
+    (token_embedding): Embedding(51865, 1024)
+    (blocks): ModuleList(
+      (0-23): 24 x ResidualAttentionBlock(
+        (attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (cross_attn): MultiHeadAttention(
+          (query): Linear(in_features=1024, out_features=1024, bias=True)
+          (key): Linear(in_features=1024, out_features=1024, bias=False)
+          (value): Linear(in_features=1024, out_features=1024, bias=True)
+          (out): Linear(in_features=1024, out_features=1024, bias=True)
+        )
+        (cross_attn_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+        (mlp): Sequential(
+          (0): Linear(in_features=1024, out_features=4096, bias=True)
+          (1): GELU(approximate='none')
+          (2): Linear(in_features=4096, out_features=1024, bias=True)
+        )
+        (mlp_ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+      )
+    )
+    (ln): LayerNorm((1024,), eps=1e-05, elementwise_affine=True)
+  )
+): 'str' object has no attribute 'transcribe'
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\audio_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\utils.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+ERROR:engineio.server:post request handler error
+Traceback (most recent call last):
+  File "D:\speechtotext\.venv\Lib\site-packages\engineio\server.py", line 301, in handle_request
+    socket.handle_post_request(environ)
+  File "D:\speechtotext\.venv\Lib\site-packages\engineio\socket.py", line 111, in handle_post_request
+    p = payload.Payload(encoded_payload=body)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\speechtotext\.venv\Lib\site-packages\engineio\payload.py", line 13, in __init__
+    self.decode(encoded_payload)
+  File "D:\speechtotext\.venv\Lib\site-packages\engineio\payload.py", line 44, in decode
+    raise ValueError('Too many packets in payload')
+ValueError: Too many packets in payload
+ERROR:engineio.server:post request handler error
+Traceback (most recent call last):
+  File "D:\speechtotext\.venv\Lib\site-packages\engineio\server.py", line 301, in handle_request
+    socket.handle_post_request(environ)
+  File "D:\speechtotext\.venv\Lib\site-packages\engineio\socket.py", line 111, in handle_post_request
+    p = payload.Payload(encoded_payload=body)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\speechtotext\.venv\Lib\site-packages\engineio\payload.py", line 13, in __init__
+    self.decode(encoded_payload)
+  File "D:\speechtotext\.venv\Lib\site-packages\engineio\payload.py", line 44, in decode
+    raise ValueError('Too many packets in payload')
+ValueError: Too many packets in payload
+ERROR:engineio.server:message handler error
+Traceback (most recent call last):
+  File "D:\speechtotext\.venv\Lib\site-packages\engineio\server.py", line 441, in run_handler
+    return self.handlers[event](*args)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\speechtotext\.venv\Lib\site-packages\socketio\server.py", line 641, in _handle_eio_message
+    pkt = self.packet_class(encoded_packet=data)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\speechtotext\.venv\Lib\site-packages\socketio\packet.py", line 43, in __init__
+    self.attachment_count = self.decode(encoded_packet) or 0
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "D:\speechtotext\.venv\Lib\site-packages\socketio\packet.py", line 77, in decode
+    self.packet_type = int(ep[0:1])
+                       ^^^^^^^^^^^^
+ValueError: invalid literal for int() with base 10: b'`'
+ERROR:engineio.server:Invalid session 7i4S28ruhV4H2KeWAAAM (further occurrences of this error will be logged with level INFO)
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_0.wav: Couldn't open shared file mapping: <torch_12376_3922653809_576>, error code: <1455>
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_1.wav: Couldn't open shared file mapping: <torch_12376_641900454_583>, error code: <1455>
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_2.wav: Couldn't open shared file mapping: <torch_12376_1405374328_584>, error code: <1455>
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_3.wav: Couldn't open shared file mapping: <torch_12376_438701305_585>, error code: <1455>
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_4.wav: Couldn't open shared file mapping: <torch_12376_618430781_586>, error code: <1455>
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_5.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_6.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_7.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_8.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_9.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_10.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_11.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_12.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_13.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_14.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_15.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_16.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_17.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_18.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_19.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_20.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_21.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_22.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_23.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_24.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_25.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_26.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_27.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_28.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_29.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_30.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_31.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+INFO:werkzeug: * Detected change in 'D:\\speechtotext\\backend\\models\\utils.py', reloading
+WARNING:huggingface_hub.file_download:Error while downloading from https://cdn-lfs.hf.co/facebook/bart-large-cnn/40041830399afb5348525ef8354b007ecec4286fdf3524f7e6b54377e17096cb?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1730900230&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczMDkwMDIzMH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9mYWNlYm9vay9iYXJ0LWxhcmdlLWNubi80MDA0MTgzMDM5OWFmYjUzNDg1MjVlZjgzNTRiMDA3ZWNlYzQyODZmZGYzNTI0ZjdlNmI1NDM3N2UxNzA5NmNiP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiJ9XX0_&Signature=ePv%7Eww15GweF7KtnyCBoC%7E09QHLBQZxdxpCxE1Wq-IQWYATXzqMdfvAhZ7f45rjH5eB0CNsOGl3JaGrVoOB10FExErBEtC72xdtOiYtgCWpZbgC2%7EhEfwEYPJXYW7SYVJI%7ExqvMfBLJ8mSliQsjwYQNW04wt34r96T9DBFcBTJSCNIIQAR7QJRAD9Vd2N1sXKm2AXKKl%7EuIABgAzXo8X3QQugOCIiQ5yMD%7EgMUp3kXgs9AIt%7EF8A8Cr6Mm4FVgS45xF7LGC%7EZMCAI8%7EKYl0TAIDxrKP81LHX6S4EYIW%7E8LJksGuuQ0EAg15h2W2%7EshVguhS%7Epn-SEbiMv1V5bVscRQ__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+WARNING:huggingface_hub.file_download:Error while downloading from https://cdn-lfs.hf.co/facebook/bart-large-cnn/40041830399afb5348525ef8354b007ecec4286fdf3524f7e6b54377e17096cb?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1730900230&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczMDkwMDIzMH19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9mYWNlYm9vay9iYXJ0LWxhcmdlLWNubi80MDA0MTgzMDM5OWFmYjUzNDg1MjVlZjgzNTRiMDA3ZWNlYzQyODZmZGYzNTI0ZjdlNmI1NDM3N2UxNzA5NmNiP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiJ9XX0_&Signature=ePv%7Eww15GweF7KtnyCBoC%7E09QHLBQZxdxpCxE1Wq-IQWYATXzqMdfvAhZ7f45rjH5eB0CNsOGl3JaGrVoOB10FExErBEtC72xdtOiYtgCWpZbgC2%7EhEfwEYPJXYW7SYVJI%7ExqvMfBLJ8mSliQsjwYQNW04wt34r96T9DBFcBTJSCNIIQAR7QJRAD9Vd2N1sXKm2AXKKl%7EuIABgAzXo8X3QQugOCIiQ5yMD%7EgMUp3kXgs9AIt%7EF8A8Cr6Mm4FVgS45xF7LGC%7EZMCAI8%7EKYl0TAIDxrKP81LHX6S4EYIW%7E8LJksGuuQ0EAg15h2W2%7EshVguhS%7Epn-SEbiMv1V5bVscRQ__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+WARNING:huggingface_hub.file_download:Error while downloading from https://cdn-lfs.hf.co/facebook/bart-large-cnn/40041830399afb5348525ef8354b007ecec4286fdf3524f7e6b54377e17096cb?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1730900489&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczMDkwMDQ4OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9mYWNlYm9vay9iYXJ0LWxhcmdlLWNubi80MDA0MTgzMDM5OWFmYjUzNDg1MjVlZjgzNTRiMDA3ZWNlYzQyODZmZGYzNTI0ZjdlNmI1NDM3N2UxNzA5NmNiP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiJ9XX0_&Signature=nLYBgjXwDf89rc9FVccH4VAwVtdW%7Eb64U9vqBBUHY5L0oY-erBAS0kXM01x45J3uvuUPesj%7EFZf-2sletM5EdzWSHCxeOiBHi3cHcrseO1CqljzQ77b2l8eYTwFtyIg2rBTx-nA2Vcc-kmVuhxusPTgZwR84CqzLbh4lfJ3LgNCQcreN1RRJSnvEvd4FZmiIcNXN2efkP3w3lRENtOubdRcfGRCDP3AwXOlX3yuYifCNbIcBJNJJlyLtGLnYhhpJl25q3M1tJSU8ai%7EIrbdvVk%7EuAl0wM9n4qesxUzlGSR6FmAxK0htrPp9Gv7pJyGZ5ogcah6EbuO4-Ei6YfNM98w__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+WARNING:huggingface_hub.file_download:Error while downloading from https://cdn-lfs.hf.co/facebook/bart-large-cnn/40041830399afb5348525ef8354b007ecec4286fdf3524f7e6b54377e17096cb?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1730900489&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczMDkwMDQ4OX19LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9mYWNlYm9vay9iYXJ0LWxhcmdlLWNubi80MDA0MTgzMDM5OWFmYjUzNDg1MjVlZjgzNTRiMDA3ZWNlYzQyODZmZGYzNTI0ZjdlNmI1NDM3N2UxNzA5NmNiP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiJ9XX0_&Signature=nLYBgjXwDf89rc9FVccH4VAwVtdW%7Eb64U9vqBBUHY5L0oY-erBAS0kXM01x45J3uvuUPesj%7EFZf-2sletM5EdzWSHCxeOiBHi3cHcrseO1CqljzQ77b2l8eYTwFtyIg2rBTx-nA2Vcc-kmVuhxusPTgZwR84CqzLbh4lfJ3LgNCQcreN1RRJSnvEvd4FZmiIcNXN2efkP3w3lRENtOubdRcfGRCDP3AwXOlX3yuYifCNbIcBJNJJlyLtGLnYhhpJl25q3M1tJSU8ai%7EIrbdvVk%7EuAl0wM9n4qesxUzlGSR6FmAxK0htrPp9Gv7pJyGZ5ogcah6EbuO4-Ei6YfNM98w__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+WARNING:huggingface_hub.file_download:Error while downloading from https://cdn-lfs.hf.co/facebook/bart-large-cnn/40041830399afb5348525ef8354b007ecec4286fdf3524f7e6b54377e17096cb?response-content-disposition=inline%3B+filename*%3DUTF-8%27%27model.safetensors%3B+filename%3D%22model.safetensors%22%3B&Expires=1730900607&Policy=eyJTdGF0ZW1lbnQiOlt7IkNvbmRpdGlvbiI6eyJEYXRlTGVzc1RoYW4iOnsiQVdTOkVwb2NoVGltZSI6MTczMDkwMDYwN319LCJSZXNvdXJjZSI6Imh0dHBzOi8vY2RuLWxmcy5oZi5jby9mYWNlYm9vay9iYXJ0LWxhcmdlLWNubi80MDA0MTgzMDM5OWFmYjUzNDg1MjVlZjgzNTRiMDA3ZWNlYzQyODZmZGYzNTI0ZjdlNmI1NDM3N2UxNzA5NmNiP3Jlc3BvbnNlLWNvbnRlbnQtZGlzcG9zaXRpb249KiJ9XX0_&Signature=MSRFDPrLC91Kq1RYJdsYkwqLqv4-6PKlrrUrQDyXNIIUWeL5oKWP%7EqHXwB4w5NH7yo7nd6mHDfXEpKtP95aQEWBZ3U85sfJysooR5jl5UcsLmI9slH7GHb56Ua5lA6zXN%7EHYRzdfAmsdRB088ZAhWTDO1Cy8Xwb%7EDH1UEuLF2Y%7EF9%7EswvrkrsyOR-SpcfP3%7Eax-CMmIMtS9dBV2niSjWzhn8BnGuLPjp5Zl3zo80AVnwkYLF6cTy5qTQ5VNlgQsyhGj0SJUdMin6KbWciQXiy-nBmOj8jqH7Vo-xlaDNegoO0DWS7ueCQnKVBaTW9uxjZ2rT0kA8ZbHsHaCUwY-kZg__&Key-Pair-Id=K3RPWS32NSSJCE: HTTPSConnectionPool(host='cdn-lfs.hf.co', port=443): Read timed out.
+Trying to resume download...
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\microsoft.wav_chunk_0.wav: Couldn't open shared file mapping: <torch_23156_4230909775_61>, error code: <1455>
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\microsoft.wav_chunk_0.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+INFO:werkzeug: * Detected change in 'D:\\speechtotext\\backend\\models\\whisper_model.py', reloading
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Detected change in 'D:\\speechtotext\\backend\\app.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Detected change in 'D:\\speechtotext\\backend\\models\\video_summary.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_0.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_1.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_2.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_3.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_4.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_5.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_6.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_7.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_8.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_9.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_10.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_11.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_12.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_13.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_14.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_15.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_16.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_17.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_18.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_19.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_20.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_21.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_22.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_23.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_24.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_25.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_26.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_27.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_28.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_29.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_30.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_31.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_0.wav: 
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_1.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_2.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_3.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_4.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_5.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_6.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_7.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_8.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_9.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_10.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_11.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_12.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_13.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_14.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_15.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_16.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_17.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_18.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_19.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_20.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_21.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_22.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_23.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_24.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_25.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_26.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_27.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_28.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_29.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_30.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_31.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_0.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_1.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_2.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_3.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_4.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_5.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_6.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_7.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_8.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_9.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_10.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_11.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_12.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_13.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_14.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_15.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_16.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_17.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_18.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_19.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_20.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_21.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_22.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_23.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_24.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_25.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_26.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_27.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_28.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_29.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_30.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_31.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Error processing video d:\speechtotext\backend\uploads\Projectvid.mp4: index out of range in self
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 795-823-724
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_0.wav: 
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_1.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_2.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_3.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_4.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_5.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_6.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_7.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_8.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_9.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_10.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_11.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_12.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_13.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_14.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_15.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_16.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_17.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_18.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_19.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_20.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_21.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_22.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_23.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_24.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_25.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_26.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_27.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_28.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_29.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_30.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_31.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 419-930-638
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Foodvid.wav_chunk_0.wav: 
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Foodvid.wav_chunk_0.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Foodvid.wav_chunk_1.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Foodvid.wav_chunk_2.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Foodvid.wav_chunk_3.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 419-930-638
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_0.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_1.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_2.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_3.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_4.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_5.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_6.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_7.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_8.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_9.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_10.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_11.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_12.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_13.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_14.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_15.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_16.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_17.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_18.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_19.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_20.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_21.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_22.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_23.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_24.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_25.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_26.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_27.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_28.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_29.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_30.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_31.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid_chunk_180.wav_chunk_0.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid_chunk_180.wav_chunk_1.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid_chunk_240.wav_chunk_0.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid_chunk_240.wav_chunk_1.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 419-930-638
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_0.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_1.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_2.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_3.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_4.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_5.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_6.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_7.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_8.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_9.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_10.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_11.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_12.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_13.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_14.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_15.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_16.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_17.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_18.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_19.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_20.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_21.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_22.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_23.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_24.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_25.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_26.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_27.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_28.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_29.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_30.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_31.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 419-930-638
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_0.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_1.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_2.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_3.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_4.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_5.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_6.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_7.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_8.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_9.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_10.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_11.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_12.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_13.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_14.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_15.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_16.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_17.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_18.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_19.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_20.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_21.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_22.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_23.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_24.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_25.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_26.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_27.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_28.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_29.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_30.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\Projectvid.wav_chunk_31.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Error processing video d:\speechtotext\backend\uploads\Projectvid.mp4: index out of range in self
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 419-930-638
+ERROR:root:Transcription failed or returned empty for a chunk.
+ERROR:root:Transcription failed or returned empty for a chunk.
+ERROR:root:All transcription attempts failed.
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\audio_processing.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 419-930-638
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\uploads\sample.wav_chunk_0.wav: 
+INFO:werkzeug: * Restarting with stat
+INFO:werkzeug: * Restarting with stat
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_0.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_1.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_2.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_3.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_4.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_5.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_6.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_7.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_8.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_9.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_10.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_11.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_12.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_13.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_14.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_15.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_16.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_17.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_18.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_19.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_20.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_21.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_22.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_23.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_24.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_25.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_26.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_27.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_28.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_29.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_30.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+ERROR:root:Timeout or error processing chunk uploads/Projectvid.wav_chunk_31.wav: A process in the process pool was terminated abruptly while the future was running or pending.
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 419-930-638
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\models\audio_chunks\microsoft.wav_chunk_0.wav: Couldn't open shared file mapping: <torch_25772_1883218255_16>, error code: <1455>
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 419-930-638
+INFO:werkzeug: * Detected change in 'd:\\speechtotext\\backend\\models\\whisper_model.py', reloading
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 419-930-638
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 419-930-638
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\models\audio_chunks\microsoft.wav_chunk_0.wav: 
+ERROR:root:Timeout or error processing chunk D:\speechtotext\backend\models\audio_chunks\microsoft_chunk_0.wav_chunk_0.wav: 
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 419-930-638
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 191-330-759
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 191-330-759
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\models\audio_chunks\microsoft.wav_chunk_0.wav: 
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 191-330-759
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\models\audio_chunks\microsoft.wav_chunk_0.wav: 
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 191-330-759
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 191-330-759
+INFO:werkzeug: * Restarting with stat
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 722-824-577
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\models\audio_chunks\microsoft.wav_chunk_0.wav: 
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\models\audio_chunks\microsoft.wav_chunk_0.wav: 
+ERROR:root:Timeout or error processing chunk D:\speechtotext\backend\models\audio_chunks\microsoft_chunk_0.wav_chunk_0.wav: 
+ERROR:root:Timeout or error processing chunk d:\speechtotext\backend\models\audio_chunks\microsoft.wav_chunk_0.wav: 
+ERROR:root:Timeout or error processing chunk D:\speechtotext\backend\models\audio_chunks\microsoft_chunk_0.wav_chunk_0.wav: 
