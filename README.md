@@ -33,11 +33,36 @@ Technologies Used
 
 - Bootstrap: For responsive and styled web components.
 
+## File Structure
+/speechtotext
+│
+├── /backend (Flask Backend)
+│   ├── /uploads
+│   ├── /static
+│   ├── /subtitles
+│   ├── app.py
+│   ├── requirements.txt
+|
+│
+├── /frontend (Vue.js Frontend)
+│   ├── /public
+│   ├── /src
+│   │   ├── /assets
+│   │   ├── /components
+│   │   │   ├── VideoUpload.vue
+│   │   │   ├── VideoChat.vue
+│   │   │   ├── TranscriptionResult.vue
+│   │   │   └── DownloadButton.vue
+│   │   ├── App.vue
+│   │   └── main.js
+│   ├── package.json
+│   └── vite.config.js
+│
+└── README.md
+
 ## Getting Started
 
 ### Installation
-
-####Backend setup
 
 Clone the repository
 ```
@@ -47,6 +72,8 @@ Navigate to the Speechtotext
 ```
 cd speechtotext
 ```
+#### Backend setup
+
 Set up a virtual environment:
 ```
 python -m venv speechtotextvenv
@@ -66,7 +93,7 @@ Run the backend:
 ```
 python app.py
 ```
-####Frontend Setup
+#### Frontend Setup
 
 Navigate to the frontend directory:
 ```
@@ -82,7 +109,7 @@ npm start
 ```
 Access the application in your browser at ```http://localhost:3000```
 
-####Usage
+#### Usage
 
 1. Upload an audio file through the web interface or provide a file path via an API endpoint.
 
@@ -90,12 +117,12 @@ Access the application in your browser at ```http://localhost:3000```
 
 3. Access the transcribed text through the web interface or API.
 
-####Known Issues
+#### Known Issues
 1. Files exceeding 100 MB require Git LFS for upload and storage.
 
 2. Large audio files may require additional memory and processing time.
 
-####Contributing
+#### Contributing
 
 Contributions are welcome! Please follow these steps:
 1. Fork the repository.
