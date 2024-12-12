@@ -49,3 +49,5 @@ Installation:
    ```
    pip install -r requirements.txt
    ```
+   Install FFmpeg (required for audio processing):
+   - Download FFmpeg from ```https://ffmpeg.org/ ```and add it to your system path.
