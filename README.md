@@ -29,12 +29,12 @@ Technologies Used
 
 - Git LFS: For managing large audio and model files.
 
-Installation
-
-1. Clone the repository:
+Installation:
+   Clone the repository:
    ```
    git clone https://github.com/AAnurudh/speechtotext.git
    ```
+   Navigate to the Speech to text
    ```
    cd speechtotext
    ```
