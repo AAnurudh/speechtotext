@@ -34,7 +34,7 @@ Technologies Used
 - Bootstrap: For responsive and styled web components.
 
 Installation:
-#Backend setup
+####Backend setup
 Clone the repository:
 ```
 git clone https://github.com/AAnurudh/speechtotext.git
@@ -61,7 +61,50 @@ Run the backend:
 ```
 python app.py
 ```
-#Frontend Setup
+####Frontend Setup
+Navigate to the frontend directory:
+```
+cd frontend
+```
+Install dependencies:
+```
+npm install
+```
+Start the development server:
+```
+npm start
+```
+Access the application in your browser at ```http://localhost:3000```
+
+####Usage
+1. Upload an audio file through the web interface or provide a file path via an API endpoint.
+
+2. The application will process the audio and generate text output.
+
+3. Access the transcribed text through the web interface or API.
+
+####Known Issues
+1. Files exceeding 100 MB require Git LFS for upload and storage.
+
+2. Large audio files may require additional memory and processing time.
+
+####Contributing
+Contributions are welcome! Please follow these steps:
+1. Fork the repository.
+2. Create a new branch:
+```
+git checkout -b feature-name
+```
+3. Make your changes and commit them:
+```
+git commit -m "Description of changes"
+```
+4. Push to your branch:
+```
+git push origin feature-name
+```
+5. Open a pull request.
+
 
 
 
