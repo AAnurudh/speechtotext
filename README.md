@@ -34,7 +34,7 @@ Installation:
    ```
    git clone https://github.com/AAnurudh/speechtotext.git
    ```
-   Navigate to the Speech to text
+   Navigate to the Speechtotext
    ```
    cd speechtotext
    ```
