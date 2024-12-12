@@ -34,9 +34,10 @@ Technologies Used
 - Bootstrap: For responsive and styled web components.
 
 ## File Structure
+```
 /speechtotext
 │
-├── /backend (Flask Backend)
+├── /backend  //(Flask Backend)
 │   ├── /uploads
 │   ├── /static
 │   ├── /subtitles
@@ -44,7 +45,7 @@ Technologies Used
 │   ├── requirements.txt
 |
 │
-├── /frontend (Vue.js Frontend)
+├── /frontend //(Vue.js Frontend)
 │   ├── /public
 │   ├── /src
 │   │   ├── /assets
@@ -59,6 +60,7 @@ Technologies Used
 │   └── vite.config.js
 │
 └── README.md
+```
 
 ## Getting Started
 
