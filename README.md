@@ -33,9 +33,13 @@ Technologies Used
 
 - Bootstrap: For responsive and styled web components.
 
-Installation:
+## Getting Started
+
+### Installation
+
 ####Backend setup
-Clone the repository:
+
+Clone the repository
 ```
 git clone https://github.com/AAnurudh/speechtotext.git
 ```
@@ -57,11 +61,13 @@ pip install -r requirements.txt
 ```
 Install FFmpeg (required for audio processing):
 Download FFmpeg from ```https://ffmpeg.org/ ```and add it to your system path.
+
 Run the backend:
 ```
 python app.py
 ```
 ####Frontend Setup
+
 Navigate to the frontend directory:
 ```
 cd frontend
@@ -77,6 +83,7 @@ npm start
 Access the application in your browser at ```http://localhost:3000```
 
 ####Usage
+
 1. Upload an audio file through the web interface or provide a file path via an API endpoint.
 
 2. The application will process the audio and generate text output.
@@ -89,6 +96,7 @@ Access the application in your browser at ```http://localhost:3000```
 2. Large audio files may require additional memory and processing time.
 
 ####Contributing
+
 Contributions are welcome! Please follow these steps:
 1. Fork the repository.
 2. Create a new branch:
