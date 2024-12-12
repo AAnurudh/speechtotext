@@ -38,3 +38,10 @@ Installation:
    ```
    cd speechtotext
    ```
+   Set up a virtual environment:
+   ```
+   python -m venv speechtotextvenv
+   ```
+   ```
+   source speechtotextvenv/bin/activate
+   ```
