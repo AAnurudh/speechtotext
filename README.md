@@ -29,25 +29,39 @@ Technologies Used
 
 - Git LFS: For managing large audio and model files.
 
+- React.js: Frontend framework for building user interfaces.
+
+- Bootstrap: For responsive and styled web components.
+
 Installation:
-   Clone the repository:
-   ```
-   git clone https://github.com/AAnurudh/speechtotext.git
-   ```
-   Navigate to the Speechtotext
-   ```
-   cd speechtotext
-   ```
-   Set up a virtual environment:
-   ```
-   python -m venv speechtotextvenv
-   ```
-   ```
-   source speechtotextvenv/bin/activate
-   ```
-   Install dependencies:
-   ```
-   pip install -r requirements.txt
-   ```
-   Install FFmpeg (required for audio processing):
-   Download FFmpeg from ```https://ffmpeg.org/ ```and add it to your system path.
+#Backend setup
+Clone the repository:
+```
+git clone https://github.com/AAnurudh/speechtotext.git
+```
+Navigate to the Speechtotext
+```
+cd speechtotext
+```
+Set up a virtual environment:
+```
+python -m venv speechtotextvenv
+```
+```
+source speechtotextvenv/bin/activate
+```
+
+Install dependencies:
+```
+pip install -r requirements.txt
+```
+Install FFmpeg (required for audio processing):
+Download FFmpeg from ```https://ffmpeg.org/ ```and add it to your system path.
+Run the backend:
+```
+python app.py
+```
+#Frontend Setup
+
+
+
